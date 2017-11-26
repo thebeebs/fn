@@ -24,6 +24,7 @@ docker run -e VAR_NAME=VALUE ...
 | DB_URL | The database URL to use in URL format. See [Databases](databases/README.md) for more information. | sqlite3:///app/data/fn.db |
 | MQ_URL | The message queue to use in URL format. See [Message Queues](mqs/README.md) for more information. | bolt:///app/data/worker_mq.db |
 | API_URL | The primary Fn API URL to that this instance will talk to. In a production environment, this would be your load balancer URL. | N/A |
+| API_CORS | A comma seperated list of domains to enable [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) for | None |
 | PORT | Sets the port to run on | 8080 |
 | LOG_LEVEL | Set to DEBUG to enable debugging | INFO |
 | DOCKER_HOST | Docker remote API URL | /var/run/docker.sock:/var/run/docker.sock |
